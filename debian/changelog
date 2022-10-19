@@ -1,0 +1,25 @@
+snowball-data (0+20210120-1) unstable; urgency=low
+
+  [ Stefano Rivera ]
+  * New upstream git snapshot (for snowball 2.1.0).
+    - Adds Armenian, Yiddish.
+  * Bump Standards-Version to 4.5.1, no changes needed.
+  * Update copyright.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 24 Jan 2021 23:29:17 -0700
+
+snowball-data (0+20191003-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 14 Jul 2020 17:57:47 -0700
+
+snowball-data (0+20191003-1) experimental; urgency=medium
+
+  * Initial release (closes: #962799).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 18 Jun 2020 15:17:27 +0300

@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	set -ex; for file in */*.txt */*.txt.gz; do \
+		install -v --mode=644 -D $$file debian/snowball-data/usr/share/snowball/data/$$file; \
+	done

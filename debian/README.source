@@ -1,0 +1,6 @@
+The upstream tarball is generated from upstream Git repository using the
+following commands:
+
+$ git config tar.tar.xz.command "xz -c"
+$ VERSION=0+$(git log -1 --format=%as | tr -d -)
+$ git archive HEAD --prefix=snowball-data-${VERSION}/ -o snowball-data_${VERSION}.orig.tar.xz

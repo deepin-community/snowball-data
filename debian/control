@@ -1,0 +1,32 @@
+Source: snowball-data
+Section: libs
+Priority: optional
+Maintainer: Stefano Rivera <stefanor@debian.org>
+Uploaders: Dmitry Shachnev <mitya57@debian.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://github.com/snowballstem/snowball-data
+Vcs-Git: https://salsa.debian.org/debian/snowball-data.git
+Vcs-Browser: https://salsa.debian.org/debian/snowball-data
+Rules-Requires-Root: no
+
+Package: snowball-data
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: test data for Snowball stemming algorithms
+ Snowball provides access to efficient algorithms for calculating a
+ "stemmed" form of a word.  This is a form with most of the common
+ morphological endings removed; hopefully representing a common
+ linguistic base form.  This is most useful in building search engines
+ and information retrieval software; for example, a search with stemming
+ enabled should be able to find a document containing "cycling" given the
+ query "cycles".
+ .
+ Snowball provides algorithms for several (mainly European) languages.
+ It also provides access to the classic Porter stemming algorithm for
+ English: although this has been superseded by an improved algorithm, the
+ original algorithm may be of interest to information retrieval
+ researchers wishing to reproduce results of earlier experiments.
+ .
+ This package contains the test data, which is used by Snowball test suite.
